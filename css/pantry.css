@@ -1,0 +1,20 @@
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.gallery{
+    display: grid;
+    background-color: #572224;
+    
+}

@@ -1,0 +1,43 @@
+/* hex codes of the logo: #ef5642 for the peach and #572224 for the words */
+.closets{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 45% 45%;
+    grid-gap: 20px 30px;
+    background-color: #ef5642;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.closets>img{
+    width: 100%;
+    border: #572224 solid 5px;
+    border-radius: 15px;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+header>img{
+    width: 10%;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+@media screen and (min-width: 500px){
+    .closets{
+        display: grid;
+    }
+}
