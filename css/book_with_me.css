@@ -18,28 +18,8 @@ header>img{
     width: 10%;
 }
 
-.gallery{
-    display: grid;
-    background-color: #572224;
-    width: 100%;
-    grid-template-columns: 45% 45%;
-    grid-gap: 20px 30px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-
-.gallery>img{
-    width: 100%;
-    border: #ef5642 solid 5px;
-    border-radius: 15px;
-}
-
 footer{
     background-color: white;
     text-align: right;
     font-size: 15px;
-    padding-top: 10px;
 }
-
