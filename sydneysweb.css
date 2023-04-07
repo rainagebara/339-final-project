@@ -1,0 +1,81 @@
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+header>img{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+body{
+    background-color: #ef5642;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 15px 20px 15px;
+    color: white;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+
+#sydneyphoto{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #572224;
+    border: #572224 solid 4px;
+    border-radius: 15px;
+}
+
+footer{
+    background-color: white;
+    text-align: right;
+    font-size: 10px;
+}
+
+/* 
+@media screen and (min-width: 800px){
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        padding-top: 15px;
+    }
+
+    header>img{
+        width: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+} */
