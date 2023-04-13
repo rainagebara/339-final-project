@@ -7,29 +7,103 @@
     padding-top: 15px;
 }
 
+li a {
+    color: blue;
+}
+  
+li a.active {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.skip{
+    color: black;
+    background-color: white;
+    height: 30px;
+    left: 0%;
+    padding: 10px 10px 10px 10px;
+    position: absolute; 
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.skip:focus{
+    transform: translateY(0%);
+}
+
 header>img{
-    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
-}
-
-h1{
-    color: black;
-    text-align: center;
-    font-size: 25px;
-    padding: 20px 20px 10px 20px;
-    color: white;
-    text-decoration: underline;
 }
 
 body{
-    background-color: #ef5642;
+    background-image: url('../images/background.jpeg');
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 15px 30px 15px;
+    color: black;
 }
 
 footer{
     background-color: white;
     text-align: right;
     font-size: 10px;
+}
+
+
+@media screen and (min-width: 700px){
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 15px;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+
+    header>img{
+        width: 35%;
+    }
+}
+
+
+@media screen and (min-width: 900px){
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+    }
+    
+    header>img{
+        width: 20%;
+    }
+
+    #sydneyphoto{
+        width: 30%;
+    }
+
+    footer{
+        font-size: 15px;
+        text-align: center;
+    }
 }

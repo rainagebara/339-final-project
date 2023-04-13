@@ -7,40 +7,70 @@
     padding-top: 15px;
 }
 
+li a {
+    color: blue;
+}
+  
+li a.active {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.skip{
+    color: black;
+    background-color: white;
+    height: 30px;
+    left: 0%;
+    padding: 10px 10px 10px 10px;
+    position: absolute; 
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.skip:focus{
+    transform: translateY(0%);
+}
+
 header>img{
-    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
 }
 
 body{
-    background-color: #ef5642;
+    background-image: url('../images/background.jpeg');
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h2{
     font-size: 30px;
     text-align: center;
-    padding: 15px 15px 20px 15px;
-    color: white;
+    padding: 30px 15px 30px 15px;
+    color: black;
 }
 
 h3{
     font-size: 20px;
     text-align: center;
-    color: white;
+    color: black;
     text-decoration: underline;
+    padding-bottom: 10px;
 }
 
 p{
-    font-size: 15px;
-    padding-top: 10px;
+    font-size: 17px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    color: white;
+    color: black;
     padding-bottom: 15px;
+    line-height: 25px;
 }
 
 #sydneyphoto{
@@ -59,23 +89,59 @@ footer{
     font-size: 10px;
 }
 
-/* 
-@media screen and (min-width: 800px){
+
+@media screen and (min-width: 700px){
     .nav_links{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        align-content: center;
-        justify-content: space-around;
         padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 15px;
+        justify-content: space-evenly;
+        background-color: white;
     }
 
     header>img{
-        width: 10%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
+        width: 35%;
     }
-} */
+    
+    #sydneyphoto{
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 900px){
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+    
+    .nav_links{
+        background-color: white;
+    }
+
+    header>img{
+        width: 20%;
+    }
+
+    #sydneyphoto{
+        width: 30%;
+    }
+
+    footer{
+        font-size: 15px;
+        text-align: center;
+    }
+}
