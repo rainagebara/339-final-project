@@ -40,7 +40,12 @@ console.log(i);
     }
 
 console.log(liTag);
-    currentDate.innerText = months[currMonth] + ", " + currYear;
+    var writingDate = months[currMonth] + ", " + currYear;
+    // writingDate.style.color = "navy"
+    currentDate.innerHTML = writingDate;
+
+    // writingDate.style.fontStyle = "Cambria";
+    // writingDate.style.color = "navy";
     // currentDate.innerText = liTag;
     // currentDate.innerText = ${months[currMonth]} ${currYear};
     days.innerHTML = liTag;
