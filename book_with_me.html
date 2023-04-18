@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel = "shortcut icon" type = 'image/png' href="images/logo.png"/>
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/book_with_me.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Book With Me</title>
 </head>
 <body>
@@ -19,15 +19,85 @@
                 <li><a href = 'pantry.html'>Pantry Photos</a></li>
                 <li><a href = 'closets.html'>Addition House Spaces</a></li>
                 <li><a href = 'inspiration.html'>Tips and Tricks</a></li>
-                <li><a class = "active" href = 'book_with_me.html'>Book an Appointment</a></li>
+                <li><a href = 'book_with_me.html'>Book an Appointment</a></li>
             </ul>
         </nav>
     </header>
-    <main id ="skip">
     <h1>Book a Time to Meet With Me</h1>
-    </main>
-    <footer>Sydney Vigo 734-478-3645 | svigo@umich.edu<br/>
+    <div class = 'wrapper'>
+        <header>
+        <p class = 'currentDate'></p>
+        <div class = 'scroll'>
+            <span id = "prev" class = "click_back">&#8592</span>
+            <span id = "next" class = "click_forward">&#8594</span>
+        </div>
+    </header>
+    <div class = 'calendar'>
+        <ul class = 'week'>
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+        </ul>
+        <ul class = 'days'>
+            <!-- <li class="inactive">26</li>
+            <li class="inactive">27</li>
+            <li class="inactive">28</li>
+            <li class="inactive">29</li>
+            <li class="inactive">30</li>
+            <li class="inactive">31</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li class="active">5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li class="inactive">1</li>
+            <li class="inactive">2</li>
+            <li class="inactive">3</li>
+            <li class="inactive">4</li>
+            <li class="inactive">5</li>
+            <li class="inactive">6</li> -->
+        </ul>
+    </div>
+    </div>
+    <div id="email_textbox" class="hidden">
+        <p>Please enter your email and the best time to Meet, looking forward to meeting you! With love, Sydney</p>
+        <label>
+            Email Address & Desired Meeting Time:
+            <input type="text" name="email" id="email_input">
+        </label>
+    </div>
+    <!-- <footer>Sydney Vigo 734-478-3645 | svigo@umich.edu<br/>
         &copy; Syd's Organizational Services
-    </footer>
+    </footer> -->
 </body>
+<script src="js/calendar.js" ></script>
 </html>
