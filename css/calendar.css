@@ -1,0 +1,154 @@
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: coral;
+} */
+
+
+li a {
+    color: blue;
+}
+  
+li a.active {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.skip{
+    color: black;
+    background-color: white;
+    height: 30px;
+    left: 0%;
+    padding: 10px 10px 10px 10px;
+    position: absolute; 
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.skip:focus{
+    transform: translateY(0%);
+}
+
+header>img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-image: url('../images/background.jpeg');
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.unhide{
+    visibility: visible;
+}
+
+
+.wrapper{
+    width: 450px;
+    background: white;
+    border-radius: 10px;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+header .current_date{
+    font-size: 1.45rem;
+    font-weight:500;
+}
+header .scroll span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    color: #878787;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    color: navy;
+    font-size: 1.9rem;
+}
+header .icons span:hover{
+    background-color: #f2f2f2;
+}
+header .icons span:last-child{
+    margin-right: -10px;
+}
+.calendar{
+    padding: 20px;
+}
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.calendar .days{
+    margin-bottom: 20px;
+}
+.calendar .week li{
+    font-weight: 500;
+}
+.calendar ul li{
+    width: calc(100%/7);
+    position: relative;
+}
+.calendar .days li{
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+/* .inactive{
+    color: #aaa;
+} */
+.active{
+    color: lightgreen;
+}
+.calendar .days li::before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #f2f2f2;
+}
+.days li:hover::before{
+    background-color: antiquewhite;
+}
+.days li.active::before{
+    background: coral
+}
