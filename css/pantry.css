@@ -5,6 +5,7 @@
     align-content: center;
     align-items: center;
     padding-top: 15px;
+    row-gap: 8px;
 }
 
 li a {
@@ -92,6 +93,7 @@ footer{
         padding-bottom: 15px;
         justify-content: space-evenly;
         background-color: white;
+        font-size: 14px;
     }
 
     header>img{

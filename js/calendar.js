@@ -110,5 +110,7 @@ document.getElementById("next").addEventListener("click", function(){
 
 days.addEventListener("click", function(){
     console.log("a date has been clicked", days);
-    document.querySelector(".hidden").classList.remove("hidden");  
+    document.querySelector(".hidden").classList.remove("hidden"); 
+    // document.getElementById('email_textbox').style.textAlign = "center";
+    document.getElementById('email_textbox').setAttribute('class', 'center');
 });

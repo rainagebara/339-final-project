@@ -5,6 +5,7 @@
     align-content: center;
     align-items: center;
     padding-top: 15px;
+    row-gap: 8px;
 }
 
 li a {
@@ -89,6 +90,7 @@ p{
         padding-bottom: 15px;
         justify-content: space-evenly;
         background-color: white;
+        font-size: 14px;
     }
 
     header>img{
@@ -107,6 +109,7 @@ p{
         padding-left: 20px;
         padding-right: 20px;
         justify-content: space-between;
+        font-size: 18px;
     }
     
     header>img{

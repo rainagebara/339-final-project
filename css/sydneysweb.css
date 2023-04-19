@@ -5,6 +5,7 @@
     align-content: center;
     align-items: center;
     padding-top: 15px;
+    row-gap: 8px;
 }
 
 li a {
@@ -48,14 +49,14 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h2{
+h1{
     font-size: 30px;
     text-align: center;
     padding: 30px 15px 30px 15px;
     color: black;
 }
 
-h3{
+h2{
     font-size: 20px;
     text-align: center;
     color: black;
@@ -102,6 +103,7 @@ footer{
         padding-bottom: 15px;
         justify-content: space-evenly;
         background-color: white;
+        font-size: 14px;
     }
 
     header>img{
